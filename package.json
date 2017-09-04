@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A small conceptual static web application powered by CosmicJS",
   "scripts": {
+    "start": "gulp build; gulp server",
     "build": "gulp build",
     "dbuild": "gulp dbuild"
   },

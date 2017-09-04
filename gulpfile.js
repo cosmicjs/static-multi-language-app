@@ -158,6 +158,6 @@ gulp.task('server', () => {
         .pipe(server({
             directoryListing: false,
             open: true,
-            port: 8080
+            port: process.env.PORT || 8080
         }));
 });
