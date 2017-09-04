@@ -1,0 +1,64 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333;
+    background-image: url('./img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.app-logo {background-image: url('https://cosmicjs.com/images/logo.svg')}
+
+#error,
+#app {background-color: rgba(0,0,0,.7)}
+
+.app-title-bar {background-color: rgba(0,0,0,.5)}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {text-decoration: underline}
+
+.cosmicjs-is-awesome{
+    transition: opacity .5s;
+    opacity: .6;
+}
+
+.cosmicjs-is-awesome:hover{
+    transition: opacity .5s;
+    opacity: 1;
+}
+
+.cosmic-app-button{
+    transition: transform .2s;
+    -webkit-transition: transform .2s;
+    -moz-transition: transform .2s;
+    -o-transition: transform .2s;
+    -ms-transition: transform .2s;
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -o-transform: scale(.8);
+    -ms-transform: scale(.8);
+    outline: 0 !important;
+}
+
+.cosmic-app-button:hover{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+}
+
+#add-button{
+    background-color: #00e074;
+}
+
+#sub-button{
+    background-color: #e05a00;
+}

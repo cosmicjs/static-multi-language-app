@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CosmicJS Static web application</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="./assets/bundle.css" rel="stylesheet">
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="app">
+        <div class="app-title-bar">
+            <div class="app-title">
+                <a class="app-logo" href="https://cosmicjs.com/"></a>
+                <h1 data-cosmic-node="app-title"></h1>
+            </div>
+            <div class="app-main-lang">
+                <span data-cosmic-node="app-language-select"></span><select data-cosmic-lang-select></select>
+            </div>
+        </div>
+        <div class="app-container">
+            <div class="cosmic-app">
+                <h2 data-cosmic-node="button-press-prompt"></h2>
+                <div>
+                    <button id="add-button" class="cosmic-app-button">
+                        <span data-cosmic-node="add-button"></span>
+                    </button>
+                    <button id="sub-button" class="cosmic-app-button">
+                        <span data-cosmic-node="sub-button"></span>
+                    </button>
+                </div>
+                <h2 class="comsic-app-current-count">
+                    <span data-cosmic-node="current-count"></span>
+                    <span id="current-count"></span>
+                </h2>
+                <h3 id="count-message"></h3>
+            </div>
+        </div>
+        <div class="app-footer">
+            <a href="https://cosmicjs.com/" class="cosmicjs-is-awesome">
+                <img src="https://cosmicjs.com/images/logo.svg" alt="cosmicjs logo"><span data-cosmic-node="cosmicjs-powered">Proudly Powered by Cosmic JS</span>
+            </a>
+        </div>
+    </div>
+    <noscript id="js-error">
+        <div id="error">
+            <img src="./assets/img/error.svg" width="200" height="200" alt="error has occurred">
+            <h3>Error: <span>Fatal Javascript Exception</span></h3>
+        </div>
+    </noscript>
+</body>
+<script src="./assets/bundle.js"></script>
+</html>

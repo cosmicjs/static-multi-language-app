@@ -1,0 +1,30 @@
+/* This CSS will handle global events.
+The app will not display unless there is language content loaded */
+
+body > #app,
+body > #error{
+    display: none;
+}
+
+
+body.lang #app,
+body.error > #error{
+    display: block;
+}
+
+#error{
+    position: absolute;
+    top: 50%; left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    padding: 2rem 1rem;
+}
+
+body.error > #app{
+    display: none;
+}

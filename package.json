@@ -1,0 +1,25 @@
+{
+  "name": "static-multi-language-app",
+  "version": "1.0.0",
+  "description": "A small conceptual static web application powered by CosmicJS",
+  "scripts": {
+    "build": "gulp build",
+    "dbuild": "gulp dbuild"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cosmicjs": "^2.4.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "gulp-webserver": "^0.9.1",
+    "striptags": "^3.1.0"
+  }
+}
