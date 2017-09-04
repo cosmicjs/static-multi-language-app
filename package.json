@@ -5,11 +5,7 @@
   "scripts": {
     "start": "gulp build; gulp server",
     "build": "gulp build",
-    "dbuild": "gulp dbuild"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
+    "dbuild": "gulp dbuild",
     "cosmicjs": "^2.4.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
@@ -22,5 +18,7 @@
     "gulp-watch": "^4.3.11",
     "gulp-webserver": "^0.9.1",
     "striptags": "^3.1.0"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }
