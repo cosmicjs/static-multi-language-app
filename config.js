@@ -1,7 +1,7 @@
 module.exports = {
     cosmicjs: {
         bucket: {
-            slug: process.env.COSMIC_BUCKET || 'comsic-static-multi-lang-app',
+            slug: process.env.COSMIC_BUCKET || 'cosmic-static-multi-lang-app',
             read_key: process.env.COSMIC_READ_KEY,
             write_key: process.env.COSMIC_WRITE_KEY
         }
