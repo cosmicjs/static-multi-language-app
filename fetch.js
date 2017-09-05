@@ -53,7 +53,7 @@ function fetchNodes(){
                         return node; // return the node.
                     }});
 
-                    extractedLocales = []; Object.keys(extractedLocales); // convert the object to a simple array of registered keys
+                    extractedLocales = Object.keys(extractedLocales); // convert the object to a simple array of registered keys
 
                     console.log(LOG_NAME, `(${ rawNodes.length }) Nodes remain after filtration`);
                     console.log(LOG_NAME, `Detected (${ extractedLocales.length }) locales`, (extractedLocales.length > 0) ? extractedLocales : '>>NO LOCALES DETECTED!<<');
