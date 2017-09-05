@@ -1,10 +1,10 @@
-# API-Powered Static Web Application
+# Multi-Language Static Web Application
 
-[View Demo]()
+[View Demo](https://cosmicjs.com/apps/static-multi-language-app)
 
 ## Why?
-1. The ability to manage content from the Cosmic JS CMS API
-2. The speed of bundling data directly within your Javascript
+1. The ability to manage content from the [Cosmic JS CMS API](https://cosmicjs.com)
+2. The speed of bundling data directly within your JavaScript
 3. The ability to change the display language of your application on the fly (without using AJAX)
 
 ## How it works
@@ -14,7 +14,7 @@
 2. You then can use the bundled Cosmic Language Library to render and change languages on the fly.
 
 ## Article
-For further reading, checkout the article [article-link]().
+For further reading, checkout the article [article-link](https://cosmicjs.com/blog/how-to-build-a-multi-language-static-website-without-ajax).
 
 ## Getting Started
 ### Install
@@ -43,7 +43,7 @@ You can easily manage the content in your static site on Cosmic JS.  Follow thes
 1. [Log in to Cosmic JS](https://cosmicjs.com).
 2. Create a bucket.
 3. Go to Your Bucket > Apps.
-4. Install the [link-to-project]
+4. Install the [Static Multi-Language App](https://cosmicjs.com/apps/static-multi-language-app)
 5. Deploy your Static Site to the Cosmic App Server at Your Bucket > Web Hosting.
 
 ## Language runtime API
