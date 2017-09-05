@@ -10,7 +10,7 @@ const gulpIf = require('gulp-if');
 const cleanCSS = require('gulp-clean-css');
 
 /* local files + configuration */
-const config = require('./config'); // get the local configuation
+const config = require('./config'); // get the local configuration
 const fetchCosmicNodes = require('./fetch'); // get our custom Cosmic fetch utility
 
 /* dev tools */
@@ -23,7 +23,7 @@ const dest = gulp.dest;
 
 /* setup our pathnames */
 const srcPath = path.join(__dirname, './src'); // where the project is stored
-const dataPath = path.join(__dirname, config.fetch.file); // where the ComsicJS data should be stored
+const dataPath = path.join(__dirname, config.fetch.file); // where the Cosmic JS data should be stored
 const buildPath = path.join(__dirname, './build'); // where the build site is stored
 const assetPath = path.join(buildPath, './assets'); // where the assets will be stored
 
@@ -31,8 +31,8 @@ const assetPath = path.join(buildPath, './assets'); // where the assets will be 
 const REPALCE_DEFAULT_LANG = '/#_COSMIC_NODE_DEFAULT_LANG_#/';
 const REPLACE_LANG = '/#_COSMIC_NODE_LANG_DATA_#/'; // the string that will be replaced with the parsed language data
 
-let NodeLanguageData = null; // the session container for the Node Language Data fetched from CosmicJS
-// acts as a failsafe, setting it to 'null' in case the Data is not fetched.
+let NodeLanguageData = null; // the session container for the Node Language Data fetched from Cosmic JS
+// acts as a fail-safe, setting it to 'null' in case the Data is not fetched.
 
 let ENV_PRODUCTION = false; // flag for setting things like js minification
 /* production environment setter */
@@ -55,7 +55,7 @@ gulp.task('lang:load', (callback) => {
         // caching is enabled: attempt to read the cache file as a string.
         fs.readFile(dataPath, 'utf-8', (error, data) => {
             if (error) {
-                // there is a corrupted file or something aweful is inside so let's make a new one.
+                // there is a corrupted file or something awful is inside so let's make a new one.
                 // fetch live data
                 fetchCosmicNodes().then(data => {
                     NodeLanguageData = data; // set the data in the runtime storage

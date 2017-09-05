@@ -97,7 +97,7 @@
             langSelectNode,
             i = langSelectMenus.length, j;
 
-        // loop through each of the avaliable menus
+        // loop through each of the available menus
         while (i--){
             langSelectNode = langSelectMenus[i]; // create iterator node
 

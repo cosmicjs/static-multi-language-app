@@ -9,7 +9,7 @@
 
 ## How it works
 1. The build process uses the Cosmic JS API to fetch `Nodes`, and bundles it within the `bundle.js` file.
-2. When the page is loaded, depending on your preferred method, the bundled Cosmic JS Language Library will load dynamicly
+2. When the page is loaded, depending on your preferred method, the bundled Cosmic JS Language Library will load dynamically
     rendered strings.
 2. You then can use the bundled Cosmic Language Library to render and change languages on the fly.
 
@@ -65,7 +65,7 @@ with the specified value.
 <body>
     <div id="app">
         <!-- the below will look for a Node with the name "title-message" and will update
-        it's innerHTML when the locale Changes --!> 
+        it's innerHTML when the locale Changes --> 
         <h1 data-cosmic-node="title-message"></h1>
     </div>
 </body>
@@ -138,7 +138,7 @@ Both the build process as well as `fetch.js` use a custom configuration found wi
 module.exports = {
     // other configurations...
    lang: {
-        defaultLocale: 'en-US',
+        defaultLocale: 'en-US'
    }
 }
 ``` 
