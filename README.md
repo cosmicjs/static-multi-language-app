@@ -1,4 +1,5 @@
 # Multi-Language Static Web Application
+![Multi-Language Static App](https://cosmicjs.com/uploads/e42c0fd0-923e-11e7-a292-7fa737c9dc7c-muli-lang-app.jpg)
 
 [View Demo](https://cosmicjs.com/apps/static-multi-language-app)
 
