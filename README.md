@@ -1,20 +1,21 @@
-# API-Powered Static Web Application
+# Multi-Language Static Web Application
+![Multi-Language Static App](https://cosmicjs.com/uploads/e42c0fd0-923e-11e7-a292-7fa737c9dc7c-muli-lang-app.jpg)
 
-[View Demo]()
+#### [View Demo](https://cosmicjs.com/apps/static-multi-language-app)
 
 ## Why?
-1. The ability to manage content from the Cosmic JS CMS API
-2. The speed of bundling data directly within your Javascript
+1. The ability to manage content from the [Cosmic JS CMS API](https://cosmicjs.com)
+2. The speed of bundling data directly within your JavaScript
 3. The ability to change the display language of your application on the fly (without using AJAX)
 
 ## How it works
 1. The build process uses the Cosmic JS API to fetch `Nodes`, and bundles it within the `bundle.js` file.
-2. When the page is loaded, depending on your preferred method, the bundled Cosmic JS Language Library will load dynamically
+2. When the page is loaded, depending on your preferred method, the bundled Cosmic JS Language Library will load dynamicly
     rendered strings.
 2. You then can use the bundled Cosmic Language Library to render and change languages on the fly.
 
 ## Article
-For further reading, checkout the article [article-link]().
+For further reading, checkout the article [article-link](https://cosmicjs.com/blog/how-to-build-a-multi-language-static-website-without-ajax).
 
 ## Getting Started
 ### Install
@@ -22,8 +23,8 @@ Make sure you have `npm` and `git` installed before starting to work on this pro
 `git clone` and install the required build dependencies with `npm install`.
 
 ```bash
-git clone 'git-clone'
-cd 'directtory'
+git clone https://github.com/cosmicjs/static-multi-language-app
+cd static-multi-language-app
 npm install
 ```
 
@@ -43,7 +44,7 @@ You can easily manage the content in your static site on Cosmic JS.  Follow thes
 1. [Log in to Cosmic JS](https://cosmicjs.com).
 2. Create a bucket.
 3. Go to Your Bucket > Apps.
-4. Install the [link-to-project]
+4. Install the [Static Multi-Language App](https://cosmicjs.com/apps/static-multi-language-app)
 5. Deploy your Static Site to the Cosmic App Server at Your Bucket > Web Hosting.
 
 ## Language runtime API
@@ -65,7 +66,7 @@ with the specified value.
 <body>
     <div id="app">
         <!-- the below will look for a Node with the name "title-message" and will update
-        it's innerHTML when the locale Changes --> 
+        it's innerHTML when the locale Changes --!> 
         <h1 data-cosmic-node="title-message"></h1>
     </div>
 </body>
@@ -138,7 +139,7 @@ Both the build process as well as `fetch.js` use a custom configuration found wi
 module.exports = {
     // other configurations...
    lang: {
-        defaultLocale: 'en-US'
+        defaultLocale: 'en-US',
    }
 }
 ``` 
