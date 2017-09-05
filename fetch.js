@@ -56,7 +56,7 @@ function fetchNodes(){
                     extractedLocales = Object.keys(extractedLocales); // convert the object to a simple array of registered keys
 
                     console.log(LOG_NAME, `(${ rawNodes.length }) Nodes remain after filtration`);
-                    console.log(LOG_NAME, `Detected (${ extractedLocales.length }) locales`, extractedLocales);
+                    console.log(LOG_NAME, `Detected (${ extractedLocales.length }) locales`, (extractedLocales.length > 0) ? extractedLocales : '>>NO LOCALES DETECTED!<<');
 
                     /* We now have a minimized array only containing the whitelisted content. Be we aren't done yet.
                        Now we need to strip each Node so it has DOM-safe markup, which is specified in the config
@@ -77,7 +77,7 @@ function fetchNodes(){
 
                         languageContainer[localeString] = {}; // initialize a new sub container for the locale.
 
-                        // look for all nodes witha  matching local string, remove it's locale and sanitize it's content
+                        // look for all nodes with a matching locale string, remove it's locale and sanitize it's content
                         utils.matchesFromObjectArray(filteredNodes, 'locale', localeString, {
                             custom: node => {
                                 // push the new node to the container object (while also only using whitelisted elements)
@@ -87,6 +87,26 @@ function fetchNodes(){
                             }
                         })
                     }
+
+                    (() => {
+                        // logger function that returns the list of keys
+                        let localeKeys = extractedLocales,
+                            localeNode,
+                            i = localeKeys.length;
+
+                        if (i > 0) {
+                            // list through each locale
+                            while (i--) {
+                                localeNode = localeKeys[i];
+                                console.log(LOG_NAME, `[${ localeNode }] with (${ Object.keys(languageContainer[localeNode]).length }) registered Nodes`);
+                            }
+                        } else {
+                            // print error
+                            console.error(LOG_NAME,
+                                'NO REGISTERED LANGUAGE DATA. Please verify that Cosmic JS data has "status" of "published", as well as "locale"');
+                            console.log('First Node fetched by server:\n', rawNodes[0])
+                        }
+                    })();
 
                     // by now we should have an awesome array of content
                     success(languageContainer); // pass the data to the success Promise return
