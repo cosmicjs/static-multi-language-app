@@ -15,7 +15,7 @@
 2. You then can use the bundled Cosmic Language Library to render and change languages on the fly.
 
 ## Article
-For further reading, checkout the article [article-link](https://cosmicjs.com/blog/how-to-build-a-multi-language-static-website-without-ajax).
+For further reading, checkout the Cosmic JS article [article-link](https://cosmicjs.com/blog/how-to-build-a-multi-language-static-website-without-ajax).
 
 ## Getting Started
 ### Install
