@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A small conceptual static web application powered by CosmicJS",
   "scripts": {
-    "start": "gulp build; gulp server",
+    "start": "gulp build; node prod-server.js",
     "build": "gulp build",
     "dbuild": "gulp dbuild"
   },
@@ -12,6 +12,7 @@
   "dependencies": {
     "cosmicjs": "^2.4.0",
     "del": "^3.0.0",
+    "express": "^4.15.4",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.7.0",
     "gulp-concat": "^2.6.1",
